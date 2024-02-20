@@ -1,1 +1,412 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: start; */
+    /* background-color: #40413c; */
+
+
+}
+
+.main-sec {
+    width: 50%;
+    background-color: #40413c;
+}
+
+.inner-container {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+.color-white {
+    color: grey;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.btn {
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.btn-2 {
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30em;
+
+
+}
+
+.black-bg {
+    background-color: #40413c;
+}
+
+.gray-bg {
+    background-color: lightslategray;
+}
+
+.green-bg {
+    background-color: green;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.main-section {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: brown; */
+}
+
+.flex-col {
+
+    flex-direction: column;
+}
+
+.section-content {
+    width: 50%;
+    /* background-color:red; */
+
+}
+
+.width-50 {
+    width: 30%;
+}
+
+.section-image {
+    /* 
+    height: calc(100%-200px); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+
+    /* background-color: blue; */
+}
+
+
+.size-imag {
+    height: calc(100% - 200px);
+    width: 500px;
+    /* position: absolute; */
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.width-300px {
+    width: 300px;
+}
+
+/* .normal-div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    flex-direction: column;
+} */
+
+.text-section {
+    text-decoration: none;
+    /* text-decoration: line-through; */
+    text-decoration: beige;
+    font: menu;
+    gap: 15px;
+}
+
+.flex-spacebetween-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.width-80 {
+    width: 80%;
+}
+
+.height-80 {
+    height: 80%;
+}
+
+.height-500px {
+    height: 500px;
+}
+
+.left .right {
+    width: 50%;
+}
+
+.left {
+    background-color: chocolate;
+}
+
+.right {
+    background: white;
+}
+
+/* .container {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
+  }
+  .html {width: 90%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.php {width: 60%; background-color: #808080;}
+
+
+/* <div class="container">
+  <div class="skills html">90%</div>
+</div> */
+
+
+
+
+
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    /* -webkit-appearance: none; */
+    width: 100%;
+    height: 380px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 380px;
+    height: 380px;
+    background: #40413c;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 380px;
+    height: 380px;
+    background: #40413c;
+    cursor: pointer;
+}
+
+.progress {
+    height: 7px;
+    border-radius: 3px;
+}
+
+.progress-outter {
+    background-color: #c8c8c8;
+}
+
+/* Dropdown Menu */
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  } */
+
+li {
+    float: left;
+}
+
+a.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h2 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-dial {
+    width: 500px;
+    height: 500px;
+    border: 20px solid #563727;
+    background-color: rgba(222, 158, 72, 0.4);
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.point {
+    width: 500px;
+    height: 500px;
+    // border: 20px solid #563727;
+    background-color: rgba(222, 158, 72, 0.4);
+    border-radius: 50%;
+    position: absolute;
+    top: 240px;
+    left: 240px;
+}
+
+.hour {
+    font-size: 30px;
+    font-weight: bold;
+    color: #372c2e;
+    position: absolute;
+}
+
+.hour-1 {
+    top: 40px;
+    right: 130px;
+}
+
+.hour-2 {
+    top: 125px;
+    right: 45px;
+}
+
+.hour-3 {
+    top: 235px;
+    right: 10px;
+}
+
+.hour-4 {
+    top: 345px;
+    right: 45px;
+}
+
+.hour-5 {
+    top: 430px;
+    right: 130px;
+}
+
+.hour-6 {
+    top: 10px;
+    left: 240px;
+}
+
+.hour-7 {
+    top: 430px;
+    right: 130px;
+}
+
+.hour-8 {
+    top: 345px;
+    right: 45px;
+}
+
+.hour-9 {
+    top: 235px;
+    right: 10px;
+}
+
+.hour-10 {
+    top: 125px;
+    right: 45px;
+}
+
+.hour-11 {
+    top: 40px;
+    right: 130px;
+}
+
+.hour-12 {
+    top: 40px;
+    right: 235px;
+}
+.brand{
+    font-size: 20px;
+    font-weight: 3px ;
+}
